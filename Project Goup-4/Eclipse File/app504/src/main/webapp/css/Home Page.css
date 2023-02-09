@@ -1,0 +1,100 @@
+
+body {
+    font-family: Helvetica, sans-serif;
+    padding: 5%;
+    text-align: center;
+    font-size: 50;
+  }
+ 
+  .header {
+	  width : 100%;
+	  height : 150px;
+	  background-color : #2848BF  ;
+  }
+  
+  .footer {
+	  width : 100%;
+	  height : 100px;
+	  background-color : #2D3656 ;
+  }
+  
+ #logo {
+	position : absolute;
+	margin-top: 110px; 
+	margin-left: 85px; 
+	top : 0;
+	left : 0;
+	}
+    
+  #slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+  }
+    
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+    
+  .slide-wrapper {
+    width: calc(728px * 4);
+    animation: slide 10s ease infinite;
+  }
+  
+  .slide:nth-child(1) {
+    background: green;
+  }
+    
+  .slide:nth-child(2) {
+    background: pink;
+  }
+    
+  .slide:nth-child(3) {
+    background: red;
+  }
+  
+  .slide:nth-child(4) {
+    background: green;
+  }
+    
+  @keyframes slide {
+    
+    20% {
+      margin-left: 0px;
+    }
+    
+    40% {
+      margin-left: calc(-728px * 1);
+    }
+    
+    60% {
+      margin-left: calc(-728px * 2);
+    }
+    
+    80% {
+      margin-left: calc(-728px * 3);
+    }
+  }
+  
+  .ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+	margin-left: 85px;
+    list-style-type: none;
+}
+
+.cd {
+    float: left;
+    width: 20%;
+    text-decoration: none;
+	text-align: center;
+    color: white;
+    background-color: black;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+}
